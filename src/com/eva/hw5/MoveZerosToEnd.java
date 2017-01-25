@@ -9,7 +9,7 @@ package com.eva.hw5;
 */
 public class MoveZerosToEnd {
 
-	public static int[] moveZeros(int[] nums) {
+	public int[] moveZeros(int[] nums) {
 		// TODO Auto-generated method stub
 		int index = 0;
 		for(int num : nums) {
@@ -25,12 +25,13 @@ public class MoveZerosToEnd {
 	}
 	
 	public static void main(String[] args) {
+		MoveZerosToEnd obj = new MoveZerosToEnd();
 		int[] nums = {0,1,0,3,12};
 		for(int i: nums) {
 			System.out.print(i);
 		}
 		System.out.println("");
-		for(int j: moveZeros(nums)){
+		for(int j: obj.moveZeros(nums)){
 			System.out.print(j);
 		}
 

@@ -6,6 +6,19 @@ package com.eva.hw5;
  * the linked list should become 1 -> 2 -> 4 after calling your function.
 */
 
-public class DelLinkNode {
+class LinkedlistNode {
+	int val;
+	LinkedlistNode next;
+	LinkedlistNode(int x) {
+		val = x;
+	}
+}
+
+public class DelLinkNode {	
+	
+	public void delNode(LinkedlistNode node) {
+		node.val = node.next.val;
+		node.next = node.next.next;
+	}
 
 }
