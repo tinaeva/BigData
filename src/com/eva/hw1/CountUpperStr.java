@@ -1,4 +1,5 @@
 package com.eva.hw1;
+
 import java.util.Scanner;
 
 public class CountUpperStr {
